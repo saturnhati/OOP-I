@@ -32,8 +32,8 @@ const submitUser = () => {
   table.appendChild(newRow);
 
   // evento per rimuovere le righe al click sull'icona
-  newTrash.addEventListener("click", function () {
-    table.removeChild(newRow);
+  newTrash.addEventListener("click", function (event) {
+    event.currentTarget.parentElement.remove();
   });
 
   // resetto i campi degli input
@@ -48,3 +48,5 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
   });
+
+  // event.target.parentElement.remove
