@@ -12,7 +12,7 @@ class user {
 
 // funzione che viene chiamata al click sul bottone submit
 const submitUser = () => {
-  // creo un nuovo ooggetto con il costruttore utilizzando i valori inseriti negli input
+  // creo un nuovo oggetto con il costruttore utilizzando i valori inseriti negli input
   let newUser = new user(
     document.querySelector("#name").value,
     document.querySelector("#surname").value,
